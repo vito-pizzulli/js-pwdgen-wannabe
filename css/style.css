@@ -12,10 +12,10 @@ main {
     background-position: center;
     height: 100vh;
     overflow: auto;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 0 2rem;
 }
 
 div.container {
@@ -25,7 +25,7 @@ div.container {
     text-align: center;
     border-radius: 20px;
     padding: 2rem;
-    width: 90%;
+    width: 50%;
     align-self: center;
 }
 
@@ -37,13 +37,12 @@ div.passwordContainer {
 div.imageContainer {
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
 }
 
 div.imageContainer img {
     border: 3px solid #553d28;
     border-radius: 50%;
-    width: 15%;
+    width: 13%;
 }
 
 h3 {
@@ -67,6 +66,14 @@ h3 {
 
 /* XS Layout (from 0px to 576px */
 @media screen and (max-width: 576px) {
+    main {
+        padding: 0;
+    }
+
+    div.container {
+        width: 80%;
+    }
+
     div.imageContainer img {
         width: 30%;
     }
