@@ -13,6 +13,9 @@ main {
     height: 100vh;
     overflow: auto;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 div.container {
@@ -23,7 +26,7 @@ div.container {
     border-radius: 20px;
     padding: 2rem;
     width: 90%;
-    margin: 0 auto;
+    align-self: center;
 }
 
 div.passwordContainer {
@@ -40,6 +43,7 @@ div.imageContainer {
 div.imageContainer img {
     border: 3px solid #553d28;
     border-radius: 50%;
+    width: 15%;
 }
 
 h3 {
@@ -56,4 +60,28 @@ h3 {
 
 .mb-2rem {
     margin-bottom: 2rem;
+}
+
+
+/* Responsive Layouts */
+
+/* XS Layout (from 0px to 576px */
+@media screen and (max-width: 576px) {
+    div.imageContainer img {
+        width: 30%;
+    }
+}
+
+/* 2K Layout (from 2560px to 3840px */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+/* 4K Layout (from 3840px to higher resolutions */
+@media screen and (min-width: 3840px) {
+    html {
+        font-size: 40px;
+    }
 }
