@@ -1,0 +1,59 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-image: url("..//img/windowsxp.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: auto;
+    padding: 2rem;
+}
+
+div.container {
+    background-image: url("..//img/wood.jpg");
+    background-size: cover;
+    border: 3px solid #7e5a3a;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.passwordContainer {
+    color: #553d28;
+    border-radius: 20px;
+}
+
+div.imageContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+div.imageContainer img {
+    border: 3px solid #553d28;
+    border-radius: 50%;
+}
+
+h3 {
+    background-image: url(..//img/sparkles.gif);
+    color: white;
+    border: 5px solid #553d28;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.txt-uppercase {
+    text-transform: uppercase;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem;
+}
